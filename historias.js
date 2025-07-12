@@ -5,7 +5,7 @@ const contos = [
         id: 'espelho-da-alma',
         titulo: 'O Espelho da Alma Perdida',
         autor: 'Isabella Ferraz',
-        categoria: 'Horros Psicológico',
+        categoria: 'Horror Psicológico',
         imagem: 'imagens/espelho.png',
         conteudo: `
             <p>A loja de antiguidades era um labirinto de cheiros de mofo e histórias esquecidas. No fundo, escondido sob um lençol empoeirado, jazia um espelho vitoriano com uma moldura escura e entalhes intrincados. Helena, uma colecionadora ávida por peças únicas, sentiu uma atração irresistível por ele. O espelho parecia chamá-la, sussurrando promessas de reflexos mais profundos. Ela o comprou por uma barganha irrisória, ignorando o olhar apreensivo do velho antiquário.</p>
