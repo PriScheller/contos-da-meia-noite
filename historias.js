@@ -71,4 +71,4 @@ const contos = [
             <p>Tentei gritar, mas minha voz não saiu. Minhas pernas, pesadas como chumbo, mal conseguiam se mover. Quando a sombra estava a poucos metros de mim, senti o cheiro forte de enxofre e algo queimado, e o zumbido se intensificou, preenchendo todo o refeitório. Finalmente, reuni toda a força que tinha e corri. Saí do refeitório em disparada, não me importando em trancar nada, e corri para a portaria da escola. Contei ao segurança o que aconteceu, mas ele apenas balançou a cabeça, dizendo que "essas coisas acontecem por aqui, dona Carla".</p>
         `
     }
-]
+];
