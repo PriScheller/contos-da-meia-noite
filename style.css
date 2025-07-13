@@ -33,9 +33,9 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url('imagens/background.png');
-    background-size: cover; /* Ajustado para cobrir a tela */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow-x: hidden;
 }
 
@@ -54,14 +54,11 @@ a:hover {
 /* --- Cabeçalho (Header) --- */
 header {
     width: 100%;
+    /*background-color: var(--color-dark-navy);*/
     background-image: url('imagens/night-sky.jpg');
-    background-size: cover; /* Garante que a imagem de fundo do header cubra a área */
-    background-position: center; /* Centraliza a imagem de fundo do header */
     text-align: center;
     border-bottom: 2px solid var(--color-dark-brown);
     box-shadow: 0 4px 15px var(--color-shadow-dark);
-    padding-top: 1rem; /* Adicionado um padding para melhorar o espaçamento */
-    padding-bottom: 1rem;
 }
 
 header h1 {
@@ -75,9 +72,6 @@ header h1 {
 
 header nav {
     margin-top: 1.2rem;
-    display: flex; /* Adicionado display flex para melhor controle */
-    justify-content: center; /* Centraliza os itens de navegação */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
 }
 
 header nav a {
@@ -87,7 +81,6 @@ header nav a {
     font-size: 1.7rem;
     position: relative;
     padding-bottom: 8px;
-    white-space: nowrap; /* Evita quebra de linha nos links */
 }
 
 header nav a::after {
@@ -195,7 +188,6 @@ p {
     box-shadow: 0 8px 25px var(--color-shadow-dark);
     border: 1px solid var(--color-dark-brown);
     width: 100%;
-    padding: 2rem; /* Adicionado padding padrão */
 }
 
 .hero-text {
@@ -222,8 +214,8 @@ p {
 }
 
 .hero-image img {
-    max-width: 100%; /* Imagem responsiva */
-    height: auto; /* Mantém a proporção */
+    height: 30rem;
+    width: 45rem;
     border-radius: 12px;
     box-shadow: 0 6px 15px var(--color-shadow-dark), 0 0 20px var(--color-glow);
     border: 2px solid var(--color-medium-brown);
@@ -234,23 +226,13 @@ p {
 /* Ajustes para telas maiores no hero */
 @media (min-width: 768px) {
     .hero-section {
-        flex-direction: row; /* Volta a ser row em telas maiores */
         text-align: left;
         justify-content: space-between;
-        padding: 3rem; /* Mantém o padding para telas maiores */
     }
     .hero-text {
         text-align: left;
     }
-    .hero-text h2 {
-        font-size: 3.5rem; /* Garante o tamanho da fonte original para desktop */
-    }
-    .hero-image img {
-        height: 30rem; /* Define a altura para desktop */
-        width: 45rem; /* Define a largura para desktop */
-    }
 }
-
 
 .featured-stories {
     width: 100%;
@@ -399,7 +381,7 @@ p {
 }
 
 .story-detail img {
-    max-width: 100%; /* Ajustado para ser responsivo */
+    max-width: 70%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 2.5rem;
@@ -430,7 +412,7 @@ footer {
     box-shadow: 0 -4px 15px var(--color-shadow-dark);
 }
 
-/* --- Efeito de névoa/brilho para o corpo --- */
+/* --- Efeito de névoa/brilho para o corpo  --- */
 body::before {
     content: '';
     position: fixed;
@@ -451,8 +433,8 @@ body::before {
     }
 
     header nav a {
-        margin: 0 10px; /* Ajustado o margin para evitar excesso de espaçamento */
-        font-size: 1.5rem; /* Ajustado para um tamanho mais adequado em telas menores */
+        margin: 0 12px;
+        font-size: 2rem;
     }
 
     main {
@@ -468,8 +450,8 @@ body::before {
     }
 
     .hero-section {
-        padding: 2rem; /* Ajustado o padding para telas menores */
-        flex-direction: column; /* Garante que em 768px também esteja em coluna */
+        padding: 3rem;
+        flex-direction: column;
     }
 
     .story-detail {
@@ -491,12 +473,6 @@ body::before {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        align-items: center; /* Centraliza os itens da navegação em coluna */
-    }
-
-    header nav a {
-        margin: 0; /* Removido o margin horizontal pois já há gap e estão em coluna */
-        font-size: 1.3rem; /* Ajuste para melhor legibilidade em telas muito pequenas */
     }
 
     main {
@@ -516,7 +492,7 @@ body::before {
         font-size: 1rem;
     }
 
-    .button-primary { /* Removido .button-secondary pois não existe no código original */
+    .button-primary, .button-secondary {
         padding: 12px 25px;
         font-size: 0.95rem;
     }
@@ -535,11 +511,5 @@ body::before {
 
     .story-detail p {
         font-size: 1.1rem;
-        text-align: left; /* Ajustado para left para melhor leitura em dispositivos móveis se o justify não ficar bom */
-    }
-
-    .story-detail .category {
-        font-size: 0.9rem;
-        padding: 6px 10px;
     }
 }
